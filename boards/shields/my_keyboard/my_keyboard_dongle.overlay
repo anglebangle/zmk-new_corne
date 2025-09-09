@@ -1,9 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &default_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -25,7 +26,7 @@
         >;
     };
 
-    physical_layout0: physical_layout0 {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Layout";
 
